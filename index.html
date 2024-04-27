@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dim's Barber</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+            <a class="navbar-brand text-light">
+                <svg alt="Logo" width="30" height="24" class="d-inline-block align-text-top" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" viewBox="0 0 6.827 6.827">
+                    <defs>
+                        <style>.fil1,.fil2{fill:#fffffe}.fil1{fill-rule:nonzero}</style>
+                    </defs>
+                    <path style="fill:#424242" d="M0 0h6.827v6.827H0z" />
+                    <g id="Layer_x0020_1">
+                        <path class="fil1" d="M3.028 1.415a.534.534 0 0 1-.872.458.534.534 0 0 1 .285-.946h.011a.533.533 0 0 1 .576.478v.01z" />
+                        <path class="fil2" d="M1.019 5.521v.004c.011.07.045.134.1.178.03.023.136.031.174.031.037 0 .133-.004.163-.028.04-.03.07-.072.088-.12a.912.912 0 0 0 .032-.116c.014-.063.027-.127.038-.19.03-.165.055-.33.079-.495l.045-.317.086-.61.286 1.496v.013a.272.272 0 0 0 .464.208.274.274 0 0 0 .079-.165l-.002-.012-.383-1.712c-.032-.145-.14-.23-.259-.305l-.051-.033.004-.06a1.551 1.551 0 0 1 .034-.228l.033-.144.123.081c.098.065.209.11.324.131.098.02.2.021.3.011.073-.007.168-.036.24-.057.124-.036.329-.084.421-.177a.246.246 0 0 0 .056-.086v-.001l.001-.002a.49.49 0 0 0-.002-.202.272.272 0 0 0-.017-.046.212.212 0 0 0-.152-.121c-.09-.016-.218.036-.303.067-.088.033-.179.068-.273.08-.14.019-.267-.002-.363-.116a.488.488 0 0 1-.047-.066l-.018-.03.004-.034a.453.453 0 0 0-.134-.378v-.001a.447.447 0 0 0-.32-.125.364.364 0 0 0-.196.053c-.119.076-.213.265-.279.386-.087.16-.177.324-.241.496a1.787 1.787 0 0 0-.089.836c.012.114.031.22.056.333.065.303.04.628-.003.933-.03.213-.069.425-.098.638v.002z" />
+                        <path class="fil1" d="M4.654 2.06a.5.5 0 0 1-.502.501.5.5 0 0 1-.354-.855.5.5 0 0 1 .856.354z" />
+                        <path class="fil2" d="M5.358 3.938c-.056-.002-.135 0-.143 0h-.163l-.014-.085c-.027-.161-.069-.326-.108-.485l-.051-.207c-.03-.116-.06-.233-.085-.35l-.003-.014a.666.666 0 0 0-.07-.095.444.444 0 0 0-.425-.084.514.514 0 0 0-.28.264c-.08.193.013.515.062.709.039.155.13.83.348.83l.75.003H5.322v.841a287.188 287.188 0 0 1 0 .3v.028c0 .09.074.17.165.17h.157a.175.175 0 0 0 .166-.171c-.004-.032-.002-.064-.002-.089V4.441l-.001-.006c-.012-.257-.18-.477-.446-.497h-.002z" />
+                        <path class="fil1" d="M3.66 3.138a.464.464 0 0 1 .107.216c.102.334.179.856.254 1.216h1.003c.06 0 .11.049.11.109v.473c0 .06-.05.11-.11.11l-.413-.002c-.31 0-.62 0-.929.002a.35.35 0 0 1-.243-.112.34.34 0 0 1-.089-.22l-.267-1.52a.11.11 0 0 1-.003-.024.346.346 0 0 1 .346-.345c.097 0 .174.035.234.097z" />
+                        <path class="fil1" d="M4.395 5.151a.109.109 0 0 0-.218 0v.604a.109.109 0 0 0 .218 0v-.604z" />
+                        <path class="fil1" d="M3.714 5.755a.109.109 0 0 0 0 .218h1.144a.109.109 0 0 0 0-.218H3.714z" />
+                        <path style="fill:none" d="M0 0h6.827v6.827H0z" />
+                    </g>
+                </svg>
+                <strong>Dim's BarberShop</strong>
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center text-light nav-link" aria-current="page" href="/">Home</a>
+                    <a class="flex-sm-fill text-sm-center text-light nav-link" href="#service">Layanan</a>
+                </nav>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- COROUSEL -->
+    <section class="banner mb-4">
+        <div class="card mb-3">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title fs-1"><strong>Selamat Datang di DIM'S BARBERSHOP</strong> </h5>
+                <p class="card-text fs-3">Lebih dari sekadar potong rambut, rasakan pengalaman.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICE -->
+    <section class="banner b-4" id="service">
+        <div class="card">
+            <div class="card-header bg-warning text-center h1">
+                Layanan
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">HAIR CUT & STYLES</h5>
+                                <p>Menerima Memotong dan Perawatan Rambut</p>
+                                <p>Tarif Pelayanan :</p>
+                                <ul>
+                                    <li>Dewasa : Rp1.000.000,00</li>
+                                    <li>Anak-Anak: Rp500.000,00</li>
+                                </ul>
+                                <p>Cara melakukan Order Jasa :</p>
+                                <ol>
+                                    <li>Lakukan Booking Via Chat Admin</li>
+                                    <li>Tentukan Waktu dan Tempat</li>
+                                    <li>Harap Konfirmasi Kembali Ketika Akan Datang Ke Tempat</li>
+                                </ol>
+                            </div>
+                            <a href="https://wa.me/6281364947152?text=Apakah Saya Dapat Melakukan Booking Pangkas Rambut?" target="_blank" type="button" class="btn btn-outline-success">Chat Admin</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">PRODUCT PERAWATAN RAMBUT</h5>
+                                <p>Menyediakan berbagai jenis produk :</p>
+                                <ul>
+                                    <li>Pomade</li>
+                                    <li>Hair Spray</li>
+                                    <li>Gel Rambut</li>
+                                    <li>Conditioner</li>
+                                    <li>Pewarna Rambut</li>
+                                </ul>
+                            </div>
+                            <a href="#product" class="btn btn-outline-warning">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- PRODUCT LIST -->
+    <section class="banner mb-4" id="product">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1614587113639-67c78332bb39?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="pomade">
+                    <div class="card-body">
+                        <h5 class="card-title">Pomade</h5>
+                        <p class="card-text">Rp1.000.000,00</p>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="handleProductClick('Pomade')">Beli Sekarang</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Hair Spray">
+                    <div class="card-body">
+                        <h5 class="card-title">Hair Spray</h5>
+                        <p class="card-text">Rp1.000.000,00</p>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="handleProductClick('Hair Spray')">Beli Sekarang</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1630082900894-edbd503588f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGFpciUyMHNwcmF5fGVufDB8fDB8fHww" class="card-img-top" alt="Conditioner">
+                    <div class="card-body">
+                        <h5 class="card-title">Conditioner</h5>
+                        <p class="card-text">Rp1.000.000,00</p>
+                    </div>
+                    <a href="#" class="btn btn-success" onclick="handleProductClick('Conditioner')">Beli Sekarang</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://s2.bukalapak.com/img/27781454692/s-463-463/data.jpeg.webp" class="card-img-top" alt="Pewarna Rambut">
+                    <div class="card-body">
+                        <h5 class="card-title">Pewarna Rambut : Miranda</h5>
+                        <p class="card-text">Rp1.000.000,00</p>
+                    </div>
+                    <a href="#" class="btn btn-success" onclick="handleProductClick('Pewarna Rambut')">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-md-6">
+                    <h5>Alamat</h5>
+                    <p>Rambah Jaya, Bangun Purba, Rokan Hulu, Riau</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Kontak</h5>
+                    <p>Email: example@example.com<br>Telepon: 123-456-7890</p>
+                    <!-- Sosmed Links -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="bi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="bi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Tambahkan kelas mx-auto di sini -->
+                    <!-- Google Maps Embed -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.6567116121657!2d100.22538743294629!3d0.9639337455101814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302b6a2888d7e59b%3A0x2a6a5028632d7c09!2spasar%20induk%20dk4skpc!5e0!3m2!1sen!2sid!4v1714235613020!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">© 2024 Dim's Barber. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
