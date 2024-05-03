@@ -1,16 +1,77 @@
-*{
-        padding: 0;
-        margin: 0;
-}
-.navbar {
-        position: relative;
-    z-index: 1000; /* Atur angka yang lebih rendah dari z-index konten di belakangnya */
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.banner{
-        padding-top: 60px;
+
+.navbar,
+footer {
+    background-color: #00215E;
 }
-.card-img-top {
-        object-fit: cover;
-        height: 300px; /* Sesuaikan tinggi gambar sesuai kebutuhan Anda */
+
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: 10px 5px;
     }
+
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        height: 100px;
+    }
+}
+
+.banner {
+    padding-top: 3rem;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 300px;
+}
+
+.buttonpos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#typing-title {
+    color: red;
+    font-weight: bold;
+}
+
+/* Animasi typing */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.typing-animation {
+    border-right: .15em solid orange;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}

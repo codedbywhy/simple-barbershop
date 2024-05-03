@@ -12,8 +12,8 @@
 
 <body>
     <!-- NAVBAR -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
             <a class="navbar-brand text-light position-relative">
                 <svg alt="Logo" width="30" height="24" class="d-inline-block align-text-top" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" viewBox="0 0 6.827 6.827">
                     <defs>
@@ -31,7 +31,7 @@
                         <path style="fill:none" d="M0 0h6.827v6.827H0z" />
                     </g>
                 </svg>
-                <strong>Dim's BarberShop</strong>
+                <strong>DIM'S BARBERSHOP</strong>
             </a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,23 +42,22 @@
                     <a class="flex-sm-fill text-sm-center text-light nav-link" href="#service">Layanan</a>
                 </nav>
             </div>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <!-- COROUSEL -->
-    <main class="banner mb-4 mx-auto">
+    <section class="banner mx-auto">
         <div class="card mb-3">
             <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
             <div class="card-body text-center">
-                <h5 class="card-title fs-1"><strong>Selamat Datang di DIM'S BARBERSHOP</strong> </h5>
+                <h5 class="card-title fs-1">Selamat Datang di <span id="typing-title"></span> </h5>
                 <p class="card-text fs-3">Lebih dari sekadar potong rambut, rasakan pengalaman.</p>
             </div>
         </div>
-    </main>
+    </section>
     <!-- SERVICE -->
-    <section class="banner b-4 mx-auto" id="service">
+    <section class="banner mx-auto" id="service">
         <div class="card">
-            <div class="card-header bg-warning text-center h1">
+            <div class="card-header bg-warning-subtle text-center h1">
                 Layanan
             </div>
             <div class="card-body">
@@ -80,7 +79,9 @@
                                     <li>Harap Konfirmasi Kembali Ketika Akan Datang Ke Tempat</li>
                                 </ol>
                             </div>
-                            <a href="https://wa.me/6282286141946?text=Apakah Saya Dapat Melakukan Booking Pangkas Rambut?" target="_blank" type="button" class="btn btn-outline-success">Chat Admin</a>
+                            <div class="buttonpos">
+                                <a href="https://wa.me/6282286141946?text=Apakah Saya Dapat Melakukan Booking Pangkas Rambut?" target="_blank" type="button" class="btn btn-outline-success">Chat Admin</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -96,14 +97,16 @@
                                     <li>Pewarna Rambut</li>
                                 </ul>
                             </div>
-                            <a href="#product" class="btn btn-outline-warning">Lihat Produk</a>
+                            <div class="buttonpos">
+                                <a href="#product" class="btn btn-outline-warning">Lihat Produk</a>
+                            </div>
                         </div>
                     </div>
                 </div>
     </section>
     <!-- PRODUCT LIST -->
-    <section class="banner mb-4 mx-auto" id="product">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+    <section class="banner mx-auto" id="product">
+        <div class="row row-cols-sm-2 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
                     <img src="https://images.unsplash.com/photo-1614587113639-67c78332bb39?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="pomade">
@@ -111,7 +114,9 @@
                         <h5 class="card-title">Pomade</h5>
                         <p class="card-text">Rp1.000.000,00</p>
                     </div>
-                    <button type="button" class="btn btn-success" onclick="handleProductClick('Pomade')">Beli Sekarang</button>
+                    <div class="buttonpos">
+                        <button type="button" class="btn btn-success" onclick="handleProductClick('Pomade')"><i class="bi bi-cart"></i> Beli Sekarang</button>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -121,7 +126,9 @@
                         <h5 class="card-title">Hair Spray</h5>
                         <p class="card-text">Rp1.000.000,00</p>
                     </div>
-                    <button type="button" class="btn btn-success" onclick="handleProductClick('Hair Spray')">Beli Sekarang</button>
+                    <div class="buttonpos">
+                        <button type="button" class="btn btn-success" onclick="handleProductClick('Hair Spray')"><i class="bi bi-cart"></i> Beli Sekarang</button>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -131,7 +138,9 @@
                         <h5 class="card-title">Conditioner</h5>
                         <p class="card-text">Rp1.000.000,00</p>
                     </div>
-                    <a href="#" class="btn btn-success" onclick="handleProductClick('Conditioner')">Beli Sekarang</a>
+                    <div class="buttonpos">
+                        <button type="button" class="btn btn-success" onclick="handleProductClick('Conditioner')"><i class="bi bi-cart"></i> Beli Sekarang</button>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -141,20 +150,23 @@
                         <h5 class="card-title">Pewarna Rambut : Miranda</h5>
                         <p class="card-text">Rp1.000.000,00</p>
                     </div>
-                    <a href="#" class="btn btn-success" onclick="handleProductClick('Pewarna Rambut')">Beli Sekarang</a>
+                    <div class="buttonpos">
+                        <button type="button" class="btn btn-success" onclick="handleProductClick('Pewarna Rambut')"><i class="bi bi-cart"></i> Beli Sekarang</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="text-light ">
         <div class="container">
-            <div class="row mx-auto">
-                <div class="col-md-6">
+            <h5 class="text-center">TENTANG KAMI</h5>
+            <div class="row justify-content-center">
+                <div class="col-md-2">
                     <h5>Alamat</h5>
                     <p>Rambah Jaya, Bangun Purba, Rokan Hulu, Riau</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-2">
                     <h5>Kontak</h5>
                     <p>Email: example@example.com<br>Telepon: 123-456-7890</p>
                     <!-- Sosmed Links -->
@@ -166,13 +178,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 position-relative">
-                    <!-- Tambahkan kelas mx-auto di sini -->
-                    <!-- Google Maps Embed -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.6567116121657!2d100.22538743294629!3d0.9639337455101814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302b6a2888d7e59b%3A0x2a6a5028632d7c09!2spasar%20induk%20dk4skpc!5e0!3m2!1sen!2sid!4v1714235613020!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
             </div>
             <div class="row">
                 <div class="col">
